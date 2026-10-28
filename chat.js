@@ -36,7 +36,7 @@
         "Disponible",
 
       image:
-        "img/1.png",
+        "img/photos/modern-house.jpg",
 
       description:
         "Villa luminosa con piscina, jardín privado y zona social integrada."
@@ -71,7 +71,7 @@
         "Nuevo",
 
       image:
-        "img/2.png",
+        "img/photos/bright-apartment.jpg",
 
       description:
         "Propiedad privada cerca de parques, comercios y vías principales."
@@ -106,7 +106,7 @@
         "Premium",
 
       image:
-        "img/3.png",
+        "img/photos/spacious-living.jpg",
 
       description:
         "Residencia con terraza, jardín amplio y acabados de alta gama."
@@ -141,7 +141,7 @@
         "Oportunidad",
 
       image:
-        "img/4.png",
+        "img/photos/garden-living.jpg",
 
       description:
         "Casa amplia con sala doble, estudio y patio ideal para reuniones."
@@ -280,12 +280,12 @@
                 >
 
                   <stop
-                    stop-color="#15372f"
+                    stop-color="#1d2936"
                   />
 
                   <stop
                     offset="1"
-                    stop-color="#2b6655"
+                    stop-color="#3e4853"
                   />
 
                 </linearGradient>
@@ -300,7 +300,7 @@
 
               <path
                 d="M320 470 600 250l280 220v190H690V525H510v135H320Z"
-                fill="#d8ad61"
+                fill="#d8b18e"
                 opacity=".72"
               />
 
@@ -841,8 +841,7 @@
       )
       ?.scrollIntoView(
         {
-          behavior:
-            "smooth"
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
         }
       );
 
@@ -953,7 +952,7 @@
         if (feedback) {
 
           feedback.textContent =
-            "Solicitud registrada en esta demostración. Conecta este formulario a tu backend para enviarla realmente.";
+            "Tu solicitud está preparada en esta vista previa. Todavía no se ha enviado.";
 
 
           feedback.className =
